@@ -23,5 +23,3 @@ def ADDWF(value, destination = _FREG, accessRAM = False): #Add WREG+File Registe
     if accessRAM: output |= 0b0000000100000000
     output |= value
     return output.to_bytes(2, "big")
-    
-print(ADDLW(254))
